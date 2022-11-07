@@ -16,15 +16,25 @@ export const Container = styled(motion.main)`
   `}
 `;
 
-export const Title = styled(motion.h2)`
+export const Title = styled(motion.h1)`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xmedium};
-    margin-bottom: ${theme.spacings.outside.medium};
+    font-size: ${theme.font.sizes.medium};
+    width: 70%;
+    text-align: center;
+    padding: ${theme.spacings.inside.huge};
+  `}
+`;
+
+export const Subtitle = styled(motion.h5)`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.small};
+    color: ${theme.palette.lighter.main};
+    margin: ${theme.spacings.outside.xxsmall};
+    text-align: center;
+    margin-bottom: 30px;
   `}
 `;
 
 export const Image = styled(motion.img)`
-  ${({ theme }) => css`
-    width: 70%;
-  `}
+  height: 50%;
 `;

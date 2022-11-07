@@ -16,6 +16,10 @@ const defaultTheme: DefaultTheme = {
     secondary: {
       main: 'rgb(44, 46, 47)',
       contrastText: 'rgb(69, 71, 71)'
+    },
+    lighter: {
+      main: 'rgb(94, 94, 96)',
+      contrastText: 'rgb(69, 71, 71)'
     }
   },
   font: {
@@ -28,7 +32,7 @@ const defaultTheme: DefaultTheme = {
       title: '70pt',
       subtitle: '30pt',
       small: '12pt',
-      medium: '16pt',
+      medium: '18pt',
       xmedium: '20pt',
       large: '28pt',
       huge: '35pt'
