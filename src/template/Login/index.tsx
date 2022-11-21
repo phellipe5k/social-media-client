@@ -13,7 +13,7 @@ const Login = () => {
 			<S.Title>Login</S.Title>
 			<S.Image src="assets/login.png" />
 			<Input onChange={(value) => console.log('VALUE EMAIL: ', value)} label="E-mail" />
-			<Input onChange={(value) => console.log('VALUE PASS: ', value)} label="Password" />
+			<Input type="password" onChange={(value) => console.log('VALUE PASS: ', value)} label="Password" />
 			<Button.Default
         futurist={false}
         glow={theme.palette.primary.contrastText}

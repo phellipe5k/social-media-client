@@ -1,14 +1,15 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Text from 'components/Text';
+import HomeTemplate from 'template/Home';
 
 const Home = () => {
   const router = useRouter();
+  let isAuth = true;
   useEffect(() => {
-    router.push('/login');
+    if (!isAuth) return router.push('/login');
   }, []);
 
-  return <Text title="Next Js Boilerplate 2023 - @phellipe5k" />;
+  return <HomeTemplate />;
 };
 
 export default Home;

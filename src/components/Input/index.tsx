@@ -3,7 +3,7 @@ import * as S from './style';
 import InputTypes from './types';
 import { FadeScale } from 'styles/animations';
 
-const Input = ({ label = 'Input', onChange }: InputTypes) => {
+const Input = ({ label = 'Input', type = 'text', onChange }: InputTypes) => {
   const [toggle, setToggle] = useState(false);
 
   function handleTyped({ target }: { target: any }) {
@@ -18,6 +18,7 @@ const Input = ({ label = 'Input', onChange }: InputTypes) => {
       transition={FadeScale.transition}>
       <S.Label isSelected={toggle}>{label}</S.Label>
       <S.Input
+        type={ type }
         isSelected={toggle}
         data-cy={`input-${label}`}
         onClick={() => setToggle(true)}
